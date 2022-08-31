@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,7 +23,7 @@
 </head>
 <body>
     <div id="app" class="{{ (url()->current() == route('home'))? '' : 'divLogin' }}">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -41,16 +42,18 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 @if(App::isLocale('en'))
-                                    <img src="{{ asset('images/icon/english.png') }}" alt="English" class="icon-lang selectLang"> 
+                                    <img src="{{ asset('images/icon/english.png') }}" alt="English" class="icon-lang selectLang" loading="lazy"> 
                                 @else
-                                    <img src="{{ asset('images/icon/spanish.png') }}" alt="Spanish" class="icon-lang selectLang"> 
+                                    <img src="{{ asset('images/icon/spanish.png') }}" alt="Spanish" class="icon-lang selectLang" loading="lazy"> 
                                 @endif
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ route('locale.setting', 'en') }}"><img src="{{ asset('images/icon/english.png') }}" class="icon-lang" alt="English"> English</a></li>
-                                <li><a class="dropdown-item" href="{{ route('locale.setting', 'es') }}"><img src="{{ asset('images/icon/spanish.png') }}" class="icon-lang" alt="Spanish"> Spanish</a></li>
+                                <li class="disabled liLang"><img src="{{ asset('images/icon/language.png') }}" class="icon-lang me-2" alt="language"> {{ __('variable.language') }}</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{{ route('locale.setting', 'en') }}"><img src="{{ asset('images/icon/english.png') }}" class="icon-lang me-2" alt="English" loading="lazy"> English</a></li>
+                                <li><a class="dropdown-item" href="{{ route('locale.setting', 'es') }}"><img src="{{ asset('images/icon/spanish.png') }}" class="icon-lang me-2" alt="Spanish" loading="lazy"> Spanish</a></li>
                             </ul>
                         </li>
                         @guest
@@ -91,5 +94,9 @@
 
         @yield('content')
     </div>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/jquery.min.js') }}" defer></script>
+    <script src="{{ asset('js/script/home.js') }}" defer></script>
 </body>
 </html>
