@@ -97,6 +97,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/jquery.min.js') }}" defer></script>
-    <script src="{{ asset('js/script/home.js') }}" defer></script>
+    <script src="{{ asset('js/script/home.js').'?v='.time() }}" defer></script>
 </body>
 </html>

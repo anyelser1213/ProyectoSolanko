@@ -44,7 +44,8 @@ section.login{
     height: 500px;
 }
 
-.positionAudio{    
+.positionAudio{ 
+    z-index: 1;   
     bottom: 85px;
     right: 85px;
     font-size: 25px;
