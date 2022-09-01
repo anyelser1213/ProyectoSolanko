@@ -9,10 +9,10 @@
     </div>
     <div class="row position-absolute buttonMain">
         <div class="col-auto">
-            <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.buy') }} > </a>
+            <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.comprar') }} > </a>
         </div>
         <div class="col-auto">
-            <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.charter') }} ></a>
+            <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.alquilar') }} ></a>
         </div>
     </div>
 </section>
@@ -20,7 +20,7 @@
 <section class="section-title">
     <div class="row d-flex justify-content-center">
         <div class="col-11 col-xl-6 text-center">
-            <h2>{{ __('variable.providing_service') }}</h2>
+            <h2>{{ __('variable.proporcionar_servicio') }}</h2>
         </div>
     </div>
 </section>
@@ -30,9 +30,9 @@
             <div class="card h-100 ms-xl-4">
                 <img src="{{ asset('images/yacht.webp') }}" class="card-img-top" alt="yacht" loading="lazy">
                 <div class="card-body text-center">
-                    <h4>{{ __('variable.buy_yacht') }}</h4>
-                    <p>{{ __('variable.buy_yacht_subtitle') }}</p>
-                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.search_yacht_sale') }} > </a>
+                    <h4>{{ __('variable.comprar_yate') }}</h4>
+                    <p>{{ __('variable.comprar_yate_subtitulo') }}</p>
+                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.buscar_yate_venta') }} > </a>
                 </div>
             </div>
         </div>
@@ -40,9 +40,9 @@
             <div class="card h-100 me-xl-4">
                 <img src="{{ asset('images/charter_yacht.webp') }}" class="card-img-top"  alt="charter yacht"  loading="lazy">
                 <div class="card-body text-center">
-                    <h4>{{ __('variable.charter_yacht') }}</h4>
-                    <p>{{ __('variable.charter_yachtt_subtitle') }}</p>
-                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.search_yacht_charter') }} ></a>
+                    <h4>{{ __('variable.alquilar_yate') }}</h4>
+                    <p>{{ __('variable.alquilar_yate_subtitulo') }}</p>
+                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.buscar_yate_alquiler') }} ></a>
                 </div>
             </div>
         </div>
@@ -50,9 +50,9 @@
             <div class="card h-100 ms-xl-4">
                 <img src="{{ asset('images/yacht_2.webp') }}" class="card-img-top"  alt="yacht"  loading="lazy">
                 <div class="card-body text-center">
-                    <h4>{{ __('variable.selling_yacht') }}</h4>
-                    <p>{{ config('app.name', 'Laravel').'  '.__('variable.selling_yacht_subtitle') }}</p>
-                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.find_out_more') }} ></a>
+                    <h4>{{ __('variable.vender_yate') }}</h4>
+                    <p>{{ config('app.name', 'Laravel').'  '.__('variable.vender_yate_subtitulo') }}</p>
+                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.mas_informacion') }} ></a>
                 </div>
             </div>
         </div>
@@ -60,9 +60,9 @@
             <div class="card h-100 me-xl-4">
                 <img src="{{ asset('images/yacht_3.webp') }}" class="card-img-top"  alt="yacht"  loading="lazy">
                 <div class="card-body text-center">
-                    <h4>{{ __('variable.superyacht_owner') }}</h4>
-                    <p>{{ config('app.name', 'Laravel').'  '.__('variable.offers_services') }}</p>
-                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.search_yacht_charter') }} ></a>
+                    <h4>{{ __('variable.propietario_yate') }}</h4>
+                    <p>{{ config('app.name', 'Laravel').'  '.__('variable.oferta_servicios') }}</p>
+                    <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.buscar_yate_alquiler') }} ></a>
                 </div>
             </div>
         </div>

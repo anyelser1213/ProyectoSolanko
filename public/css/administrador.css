@@ -1,0 +1,27 @@
+:root {
+    --color-primary: #00204e;
+    --color-text-primary: #00204e;
+    --third-color: #f7f7f7;
+}
+
+nav.navbar{
+    background: var(--third-color) !important;
+    color: black !important;
+}
+
+.menu-btn span, .menu-btn span:nth-of-type(2)::before, .menu-btn span:nth-of-type(2)::after{
+    background: black;
+}
+
+.btn-primary{background-color: var(--color-primary);}
+
+.icon-lang{width: 25px;}
+.icon-lang.selectLang{width: 20px;}
+
+.dropdownLang::after{content: "" !important;}
+
+.liLang{padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);}
+.section-main{margin-top: 0.71rem !important;}
+
+.btn_edit, .btn_edit:hover, .btn_save, .btn_save:hover {color: var(--color-primary)}
+.btn_remove, .btn_remove:hover{color: red}
