@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Solanko
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
                                 @endif
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="disabled liLang"><img src="{{ asset('images/icon/language.png') }}" class="icon-lang me-2" alt="language"> {{ __('variable.language') }}</li>
+                                <li class="disabled liLang"><img src="{{ asset('images/icon/language.png') }}" class="icon-lang me-2" alt="language"> {{ __('variable.lenguaje') }}</li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="{{ route('locale.setting', 'en') }}"><img src="{{ asset('images/icon/english.png') }}" class="icon-lang me-2" alt="English" loading="lazy"> English</a></li>
                                 <li><a class="dropdown-item" href="{{ route('locale.setting', 'es') }}"><img src="{{ asset('images/icon/spanish.png') }}" class="icon-lang me-2" alt="Spanish" loading="lazy"> Spanish</a></li>
@@ -67,7 +67,7 @@
 
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }}
+                                {{ Auth::user()->nombre }}
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -94,21 +94,29 @@
                 <!-- Sidebar Navidation Menus-->
                 <span class="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">Principal</span>
                 <ul class="list-unstyled py-4">
+
                     <li class="sidebar-item <?php echo menu_anchor(url('/dashboard')); ?>">
                         <a class="sidebar-link" href="{{route('dashboard')}}"> 
                             <i class="fas fa-home me-xl-2"></i> Dashboard 
                         </a>
                     </li>
-                    <li class="sidebar-item <?php echo menu_anchor(url('/usuario')); ?>">
+
+
+
+                    <li class="sidebar-item <?php echo menu_anchor(url('/usuario')); ?>" id="menu-user">
                         <a class="sidebar-link" href="#menu-usuario" data-bs-toggle="collapse"> 
                         <i class="fas fa-user me-xl-2"></i>
                             {{ __('variable.usuarios') }} 
                         </a>
                         <ul class="collapse list-unstyled <?php echo menu_anchor(url('/usuario')); ?>" id="menu-usuario">
                             <li><a class="sidebar-link" href="{{route('usuario.crear')}}">{{ __('variable.crear_usuario') }} </a></li>
-                            <li><a class="sidebar-link" href="{{route('usuario.listado')}}">{{ __('variable.listado_usuario') }} /a></li>
+                            <li><a class="sidebar-link" href="{{route('usuario.listado')}}">{{ __('variable.listado_usuario') }} </a></li>
                         </ul>
                     </li>
+
+
+                    
+
                     <li class="sidebar-item <?php echo menu_anchor(url('/role')); ?>">
                         <a class="sidebar-link" href="#menu-role" data-bs-toggle="collapse"> 
                         <i class="fas fa-user-tag me-xl-2"></i>

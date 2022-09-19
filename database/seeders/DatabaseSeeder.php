@@ -16,27 +16,27 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        if(! Role::where('type', 'admin')->first())
+        if(! Role::where('nombre', 'admin')->first())
             Role::insert(
                 array(
-                    'type'           => 'admin',
+                    'nombre'           => 'admin',
                     'created_at'    => date('Y-m-d H:m:s'),
                     'updated_at'    => date('Y-m-d H:m:s'),
                 )
             );
 
-        if(! Role::where('type', 'user')->first())
+        if(! Role::where('nombre', 'user')->first())
             Role::insert(
                 array(
-                    'type'           => 'user',
+                    'nombre'           => 'user',
                     'created_at'    => date('Y-m-d H:m:s'),
                     'updated_at'    => date('Y-m-d H:m:s'),
                 )
             );
 
-        if(! User::where('name', 'admin')->first())
+        if(! User::where('nombre', 'admin')->first())
             User::create([
-                'name' => 'admin',
+                'nombre' => 'admin',
                 'email' => 'admin@solanko.com',
                 'password' => Hash::make('solanko12345'),
                 'role'  => 1,

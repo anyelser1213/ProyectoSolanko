@@ -12,7 +12,7 @@
             <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.comprar') }} > </a>
         </div>
         <div class="col-auto">
-            <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.alquilar') }} ></a>
+            <a href="" class="btn btn-primary py-2 px-3">{{ __('variable.alquilar') }} > </a>
         </div>
     </div>
 </section>
