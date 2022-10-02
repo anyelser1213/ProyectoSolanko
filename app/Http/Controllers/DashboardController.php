@@ -12,8 +12,7 @@ class DashboardController extends Controller
     {
         //validando role de usuario
         if(Auth::user()->role == 1){
-            $contexto = ['rol'=>'admin',
-                    ];
+            $contexto = ['rol'=>'admin',];
             return view('administrador.dashboard',$contexto);
 
         }else if(Auth::user()->role == 2){
