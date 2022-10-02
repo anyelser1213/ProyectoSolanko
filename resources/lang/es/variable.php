@@ -28,19 +28,19 @@ return [
     'email' => 'Correo Electrónico',
 
     //Para el menu principal
-    'role' => 'Rol',
+    'role' => 'Roles',
     'crear_role' => 'Crear Rol',
     'listado_role' => 'Listado de Roles',
     
-    'marca'=> 'Marca',
+    'marca'=> 'Marcas',
     'crear_marca' => 'Crear Marca',
     'listado_marcas' => 'Listado de Marcas',
 
-    'modelo'=> 'Modelo',
+    'modelo'=> 'Modelos',
     'crear_modelo' => 'Crear Modelo',
     'listado_modelos' => 'Listado de Modelos',
 
-    'tipo_combustible'=> 'Tipo de combustible',
+    'tipo_combustible'=> 'Tipos de combustibles',
     'crear_tipo_combustible' => 'Crear Tipo de combustible',
     'listado_tipo_combustibles' => 'Listado de Tipo de combustibles',
 

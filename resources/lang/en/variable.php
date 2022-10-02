@@ -28,22 +28,22 @@ return [
     'email' => 'Email',
 
     //Para el menu principal
-    'role' => 'Role',
+    'role' => 'Roles',
     'crear_role' => 'Create Role',
     'listado_role' => 'List Role',
 
     
-    'marca'=> 'Brand',
+    'marca'=> 'Brands',
     'crear_marca' => 'Create Brand',
     'listado_marcas' => 'List Brands',
 
 
-    'modelo'=> 'Model',
+    'modelo'=> 'Models',
     'crear_modelo' => 'Create Model',
     'listado_modelos' => 'List Models',
 
 
-    'tipo_combustible'=> 'Fuel type',
+    'tipo_combustible'=> 'Fuel types',
     'crear_tipo_combustible' => 'Create Fuel Type',
     'listado_tipo_combustibles' => 'List Fuel Types',
 
