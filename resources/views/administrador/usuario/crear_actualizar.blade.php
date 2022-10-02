@@ -67,7 +67,7 @@
                                         <select name="role" class="form-control" required>
                                             <option value="">{{ __('variable.seleccionar_role') }}</option>
                                             @foreach($roles as $role)
-                                                <option value="{{$role->id}}" {{ ((isset($usuario) && $usuario->role == $role->id) || (old('role') == $role->id) )? 'selected' : '' }}>{{$role->type}}</option>
+                                                <option value="{{$role->id}}" {{ ((isset($usuario) && $usuario->role == $role->id) || (old('role') == $role->id) )? 'selected' : '' }}>{{$role->nombre}}</option>
                                             @endforeach
                                         </select>
                                         @error('role')

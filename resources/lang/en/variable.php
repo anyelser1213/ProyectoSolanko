@@ -16,9 +16,9 @@ return [
     'mas_informacion' => 'Find out more',
     'propietario_yate' => 'Superyacht Owner?',
     'oferta_servicios' => 'offers services in all yachting related fields, including charter management, yacht management, agency services, crew placement and insurance. We are here to assist at every step of your yacht ownership.',
-    'listado_role' => 'List Role',
+    
     'actualizar_role' => 'Update Role',
-    'crear_role' => 'Create Role',
+    
     'nombre_role' => 'Name Role',
     'accion' => 'Action',
     'listado_usuario' => 'List User',
@@ -26,7 +26,30 @@ return [
     'crear_usuario' => 'Create User',
     'nombre' => 'Name',
     'email' => 'Email',
+
+    //Para el menu principal
     'role' => 'Role',
+    'crear_role' => 'Create Role',
+    'listado_role' => 'List Role',
+
+    
+    'marca'=> 'Brand',
+    'crear_marca' => 'Create Brand',
+    'listado_marcas' => 'List Brands',
+
+
+    'modelo'=> 'Model',
+    'crear_modelo' => 'Create Model',
+    'listado_modelos' => 'List Models',
+
+
+    'tipo_combustible'=> 'Fuel type',
+    'crear_tipo_combustible' => 'Create Fuel Type',
+    'listado_tipo_combustibles' => 'List Fuel Types',
+
+    'yates'=> 'Yachts',
+
+
     'nombre_y_apellido' => 'Name and Surname',
     'contrasena' => 'Password',
     'seleccionar_role' => 'Select Role',

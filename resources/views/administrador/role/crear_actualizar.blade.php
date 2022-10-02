@@ -22,6 +22,7 @@
                         @if ($errors->any())
                             <div class="alert alert-danger">
                                 <ul>
+                                    jajajajaj
                                     @foreach ($errors->all() as $error)
                                         <li>{{ $error }}</li>
                                     @endforeach
@@ -34,8 +35,8 @@
                                 <div class="col-sm-3">
                                     <div class="mb-3">
                                         <label class="form-label">{{ __('variable.nombre_role') }}</label>
-                                        <input type="text" maxlength="200" name="type"  class="form-control @error('role') is-invalid @enderror" name="role" value="{{ (isset($role))? $role->type : old('type') }}" required>
-                                        @error('type')
+                                        <input type="text" maxlength="200" name="nombre"  class="form-control @error('role') is-invalid @enderror"   required>
+                                        @error('nombre')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>

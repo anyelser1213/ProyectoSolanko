@@ -16,9 +16,9 @@ return [
     'mas_informacion' => 'Más información',
     'propietario_yate' => '¿Propietario de superyate?',
     'oferta_servicios' => 'ofrece servicios en todos los campos relacionados con la navegación, incluida la gestión de chárter, gestión de yates, servicios de agencia, colocación de tripulación y seguros. Estamos aquí para ayudarlo en cada paso de la propiedad de su yate.',
-    'listado_role' => 'Listado de Role',
+    
     'actualizar_role' => 'Actualizar Role',
-    'crear_role' => 'Crear Role',
+    
     'nombre_role' => 'Nombre de Role',
     'accion' => 'Accion',
     'listado_usuario' => 'Listado de Usuario',
@@ -26,7 +26,27 @@ return [
     'crear_usuario' => 'Crear Usuario',
     'nombre' => 'Nombre',
     'email' => 'Correo Electrónico',
-    'role' => 'Role',
+
+    //Para el menu principal
+    'role' => 'Rol',
+    'crear_role' => 'Crear Rol',
+    'listado_role' => 'Listado de Roles',
+    
+    'marca'=> 'Marca',
+    'crear_marca' => 'Crear Marca',
+    'listado_marcas' => 'Listado de Marcas',
+
+    'modelo'=> 'Modelo',
+    'crear_modelo' => 'Crear Modelo',
+    'listado_modelos' => 'Listado de Modelos',
+
+    'tipo_combustible'=> 'Tipo de combustible',
+    'crear_tipo_combustible' => 'Crear Tipo de combustible',
+    'listado_tipo_combustibles' => 'Listado de Tipo de combustibles',
+
+
+    'yates'=> 'Yates',
+
     'nombre_y_apellido' => 'Nombre y Apellido',
     'contrasena' => 'Contraseña',
     'seleccionar_role' => 'Seleccionar Role',

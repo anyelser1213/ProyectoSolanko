@@ -23,7 +23,7 @@
                                 <tbody>
                                     @foreach($roles as $role)
                                         <tr>
-                                            <td>{{$role->type}}</td>
+                                            <td>{{$role->nombre}}</td>
                                             <td>
                                                 <a href="{{route('role.actualizar', ['id' => $role->id])}}" class="btn btn_edit"><i class="fas fa-user-edit"></i></a>
                                                 <a href="{{route('role.eliminar', ['id' => $role->id ])}}" class="btn btn_edit"><i class="fas fa-trash"></i></a>

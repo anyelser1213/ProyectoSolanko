@@ -103,6 +103,20 @@
 
 
 
+
+                    <li class="sidebar-item <?php echo menu_anchor(url('/role')); ?>">
+                        <a class="sidebar-link" href="#menu-role" data-bs-toggle="collapse"> 
+                        <i class="fas fa-user-tag me-xl-2"></i>
+                            {{ __('variable.role') }}  
+                        </a>
+                        <ul class="collapse list-unstyled <?php echo menu_anchor(url('/role')); ?>" id="menu-role">
+                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_role') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_role') }} </a></li>
+                        </ul>
+                    </li>
+
+
+
                     <li class="sidebar-item <?php echo menu_anchor(url('/usuario')); ?>" id="menu-user">
                         <a class="sidebar-link" href="#menu-usuario" data-bs-toggle="collapse"> 
                         <i class="fas fa-user me-xl-2"></i>
@@ -117,16 +131,56 @@
 
                     
 
-                    <li class="sidebar-item <?php echo menu_anchor(url('/role')); ?>">
-                        <a class="sidebar-link" href="#menu-role" data-bs-toggle="collapse"> 
+                    
+
+
+                    <li class="sidebar-item <?php echo menu_anchor(url('/marca')); ?>">
+                        <a class="sidebar-link" href="#menu-marca" data-bs-toggle="collapse"> 
                         <i class="fas fa-user-tag me-xl-2"></i>
-                            {{ __('variable.role') }}  
+                            {{ __('variable.marca') }}  
                         </a>
-                        <ul class="collapse list-unstyled <?php echo menu_anchor(url('/role')); ?>" id="menu-role">
+                        <ul class="collapse list-unstyled <?php echo menu_anchor(url('/marca')); ?>" id="menu-marca">
+                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_marca') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_marcas') }} </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="sidebar-item <?php echo menu_anchor(url('/modelo')); ?>">
+                        <a class="sidebar-link" href="#menu-modelo" data-bs-toggle="collapse"> 
+                        <i class="fas fa-user-tag me-xl-2"></i>
+                            {{ __('variable.modelo') }}  
+                        </a>
+                        <ul class="collapse list-unstyled <?php echo menu_anchor(url('/modelo')); ?>" id="menu-modelo">
+                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_modelo') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_modelos') }} </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="sidebar-item <?php echo menu_anchor(url('/tipo_combustible')); ?>">
+                        <a class="sidebar-link" href="#menu-tipo_combustible" data-bs-toggle="collapse"> 
+                        <i class="fas fa-user-tag me-xl-2"></i>
+                            {{ __('variable.tipo_combustible') }}  
+                        </a>
+                        <ul class="collapse list-unstyled <?php echo menu_anchor(url('/tipo_combustible')); ?>" id="menu-tipo_combustible">
                             <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_role') }} </a></li>
                             <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_role') }} </a></li>
                         </ul>
                     </li>
+
+                    <li class="sidebar-item <?php echo menu_anchor(url('/yates')); ?>">
+                        <a class="sidebar-link" href="#menu-yates" data-bs-toggle="collapse"> 
+                        <i class="fas fa-user-tag me-xl-2"></i>
+                            {{ __('variable.yates') }}  
+                        </a>
+                        <ul class="collapse list-unstyled <?php echo menu_anchor(url('/yates')); ?>" id="menu-yates">
+                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_role') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_role') }} </a></li>
+                        </ul>
+                    </li>
+
+
                 </ul>
             </nav>
             <section class="section-main w-100">

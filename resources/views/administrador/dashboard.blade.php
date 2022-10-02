@@ -6,7 +6,7 @@
         <section class="pb-0">
             <div class="container-fluid">
                 <div class="row align-items-stretch">
-                    <h2>Dashboard</h2>
+                    <h2>Dashboard </h2>
                 </div>
             </div>
         </section>
