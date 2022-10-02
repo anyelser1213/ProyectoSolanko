@@ -48,6 +48,8 @@ return [
     'listado_tipo_combustibles' => 'List Fuel Types',
 
     'yates'=> 'Yachts',
+    'crear_yate' => 'Create Yacht',
+    'listado_yates' => 'List Yachts',
 
 
     'nombre_y_apellido' => 'Name and Surname',

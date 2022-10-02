@@ -46,6 +46,8 @@ return [
 
 
     'yates'=> 'Yates',
+    'crear_yate' => 'Crear Yate',
+    'listado_yates' => 'Listado de Yates',
 
     'nombre_y_apellido' => 'Nombre y Apellido',
     'contrasena' => 'Contraseña',

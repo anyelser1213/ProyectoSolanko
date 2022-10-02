@@ -164,8 +164,8 @@
                             {{ __('variable.tipo_combustible') }}  
                         </a>
                         <ul class="collapse list-unstyled <?php echo menu_anchor(url('/tipo_combustible')); ?>" id="menu-tipo_combustible">
-                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_role') }} </a></li>
-                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_role') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_tipo_combustible') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_tipo_combustibles') }} </a></li>
                         </ul>
                     </li>
 
@@ -175,8 +175,8 @@
                             {{ __('variable.yates') }}  
                         </a>
                         <ul class="collapse list-unstyled <?php echo menu_anchor(url('/yates')); ?>" id="menu-yates">
-                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_role') }} </a></li>
-                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_role') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.crear')}}">{{ __('variable.crear_yate') }} </a></li>
+                            <li><a class="sidebar-link" href="{{route('role.listado')}}">{{ __('variable.listado_yates') }} </a></li>
                         </ul>
                     </li>
 
