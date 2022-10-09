@@ -28,6 +28,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/administrador.css').'?v='.time() }}" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
     <div id="app" class="{{ (url()->current() == route('home'))? '' : 'divLogin' }}">

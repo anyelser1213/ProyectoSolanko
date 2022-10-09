@@ -5,7 +5,7 @@
 @section('menubar')
             
     <!----Incluimos el menubar--------->
-    @include('layouts.menubar', array('tablero'=>'Tablero'))
+    @include('layouts.menubar', ['tablero'=>'Tablero','nombre'=>'lucas' ])
     
 @endsection
 
