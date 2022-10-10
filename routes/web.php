@@ -15,20 +15,33 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-
-
     return view('home2');
 })->name('home');
 
+
+Route::get('/admin', function () {
+
+
+    $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+    $out->writeln("Estamos en el contructor==> ");
+
+
+    return view('home3');
+})->name('home3');
+
 Auth::routes();
+Route::get('/logout','App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/lang/{locale}', function ($locale) {
     \App::setLocale($locale);
     Session::put('locale', $locale);
-    return redirect()->back();
-})->name('locale.setting');
+    return redirect()->back(); })->name('locale.setting');
+
+
+
+
 
 //role
 Route::get('/role/listado', [App\Http\Controllers\RolController::class, 'role_listado'])->name('role.listado'); 
